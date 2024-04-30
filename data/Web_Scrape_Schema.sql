@@ -17,6 +17,9 @@ CREATE TABLE eps_revisions;
 -- Create eps_trend table
 CREATE TABLE eps_trend;
 
+ALTER TABLE trading_volume
+ADD COLUMN `Date_converted` DATE;
+
 
 -- Alter the `earnings_estimate` table:
 ALTER TABLE earnings_estimate ADD COLUMN id INT NOT NULL AUTO_INCREMENT PRIMARY KEY;

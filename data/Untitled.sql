@@ -39,13 +39,18 @@ ALTER TABLE financials_reported ADD COLUMN id INT NOT NULL AUTO_INCREMENT PRIMAR
 -- Add foreign key constraint for financials_reported table
 ALTER TABLE financials_reported ADD CONSTRAINT fk_financials_reported_symbol FOREIGN KEY (symbol) REFERENCES symbols(symbol);
 
-ALTER TABLE company_news MODIFY symbol VARCHAR(10) NOT NULL;
+
 -- Alter the `usa_spending` table:
 ALTER TABLE company_news ADD COLUMN id INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
 
 -- Add foreign key constraint for usa_spending table
 ALTER TABLE company_news ADD CONSTRAINT fk_company_news_symbol FOREIGN KEY (symbol) REFERENCES symbols(symbol);
 
+ALTER TABLE basic_financials
+ADD COLUMN ebitdaCagr5Y DOUBLE NULL,
+ADD COLUMN revenueGrowthTTMYoy DOUBLE NULL,
+ADD COLUMN currentRatioAnnual DOUBLE NULL,
+ADD COLUMN epsAnnual DOUBLE NULL;
 
 
 
