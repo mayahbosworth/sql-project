@@ -15,19 +15,19 @@ Kharon’s core mission involves managing and mitigating risks associated with g
 The problem is well-suited for SQL given its capabilities for managing and querying large datasets. Tableau will enable the clear presentation of complex data, making the insights accessible to stakeholders.
 
 
-## Data
+## Data:
 
 ### Source:
-Finnhub API: We utilized the Finnhub Stock API to access real-time market data, financial statements, and company profiles. This API provides extensive data on global stocks, which is crucial for analyzing financial transactions and identifying patterns indicative of financial crimes like money laundering or sanctions violations.
-Yahoo Finance: Data was also extracted through web scraping Yahoo Finance, focusing on historical stock prices, trading volumes, and financial summaries. This approach allowed us to gather detailed information on stock performance over time, which is essential for our analysis of market trends and anomaly detection.
+- Finnhub API: We utilized the Finnhub Stock API to access real-time market data, financial statements, and company profiles. This API provides extensive data on global stocks, which is crucial for analyzing financial transactions and identifying patterns indicative of financial crimes like money laundering or sanctions violations.
+- Yahoo Finance: Data was also extracted through web scraping Yahoo Finance, focusing on historical stock prices, trading volumes, and financial summaries. This approach allowed us to gather detailed information on stock performance over time, which is essential for our analysis of market trends and anomaly detection.
 
 ### Characteristics:
 
-Volume: Data includes thousands of records per day, encompassing various financial metrics and stock performance indicators.
-Variety: The dataset comprises several types of information, including stock prices, trading volumes, financial ratios, earnings reports, and company expenditure.
-Velocity: The data is updated in real-time through the Finnhub API, while the scraped Yahoo Finance data provides daily updates.
-Veracity: Both Finnhub and Yahoo Finance are reputable sources providing reliable and accurate financial data.
-Value: The comprehensive financial data is crucial for detecting unusual patterns and potential illicit activities within financial markets.
+- Volume: Data includes thousands of records per day, encompassing various financial metrics and stock performance indicators.
+- Variety: The dataset comprises several types of information, including stock prices, trading volumes, financial ratios, earnings reports, and company expenditure.
+- Velocity: The data is updated in real-time through the Finnhub API, while the scraped Yahoo Finance data provides daily updates.
+- Veracity: Both Finnhub and Yahoo Finance are reputable sources providing reliable and accurate financial data.
+- Value: The comprehensive financial data is crucial for detecting unusual patterns and potential illicit activities within financial markets.
 
 
 ## Notebooks
@@ -49,5 +49,5 @@ This Jupyter notebook creates visualizations that go with the business questions
 
 ## Future Improvments
 
-Real-time Data Analysis: Implement real-time data processing for immediate detection of suspicious activities.
-Advanced Machine Learning Models: Explore deep learning and ensemble methods to enhance anomaly detection accuracy.
+- Real-time Data Analysis: Implement real-time data processing for immediate detection of suspicious activities.
+- Advanced Machine Learning Models: Explore deep learning and ensemble methods to enhance anomaly detection accuracy.
