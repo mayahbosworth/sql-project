@@ -1,4 +1,4 @@
-# Global Risk Analytics Engine
+# Financial Risk Analytics Engine
 
 
 ## Project Objective:
